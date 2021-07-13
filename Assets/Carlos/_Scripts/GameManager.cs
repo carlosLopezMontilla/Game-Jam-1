@@ -15,9 +15,14 @@ public class GameManager : MonoBehaviour
     public Jump jump;
     public bool buttonPressed;
 
+    [Header("Object to spawn")]
+    public GameObject downMenu;
+    public ObjectsToSpawn objectsToSpawn;
+
 
     private void Start()
     {
+        downMenu.SetActive(false);
         timer.SetActive(false);
         buttonPressed = false;
         timeToEnd = totalTime;
@@ -38,6 +43,7 @@ public class GameManager : MonoBehaviour
     void Place()
     {
         timer.SetActive(true);
+        downMenu.SetActive(true);
         timeToEnd -= Time.deltaTime;
         timeText.text = timeToEnd.ToString("F0");
         pControl.GetComponent<PlayerController>().enabled = false;
@@ -49,6 +55,11 @@ public class GameManager : MonoBehaviour
             pControl.GetComponent<PlayerController>().enabled = true;
             pControl.GetComponent<Jump>().enabled = true;
             timer.SetActive(false);
+            downMenu.SetActive(false);
+            objectsToSpawn.buttons[0].interactable = true;
+            objectsToSpawn.buttons[1].interactable = true;
+            objectsToSpawn.buttons[2].interactable = true;
+            objectsToSpawn.buttons[3].interactable = true;
         }
     }
 
