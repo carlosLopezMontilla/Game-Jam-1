@@ -5,8 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement")]
     public float speed;
     public Rigidbody _rb;
+
+    [Header("Jump")]
+    public bool isGrounded;
+    public float jumpForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,4 +25,5 @@ public class PlayerController : MonoBehaviour
 
         _rb.velocity = new Vector3(h * speed, _rb.velocity.y);
     }
+
 }

@@ -22,8 +22,6 @@ public class GameManager : MonoBehaviour
             timeToEnd -= 0.1f;
             timeText.text = timeToEnd.ToString("F3");
         }
-
-       
     }
 }
 
