@@ -6,22 +6,49 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Stop time and activate the timer")]
     public float totalTime = 10f;
     public float timeToEnd;
     public TextMeshProUGUI timeText;
+    public GameObject timer;
+    public PlayerController pControl;
+    public Jump jump;
+    public bool buttonPressed;
 
 
     private void Start()
     {
+        timer.SetActive(false);
+        buttonPressed = false;
         timeToEnd = totalTime;
+       
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if(Input.GetKey(KeyCode.O))
         {
-            Time.timeScale = 0;
-            timeToEnd -= 0.1f;
-            timeText.text = timeToEnd.ToString("F3");
+            buttonPressed = true;
+        }
+        if (buttonPressed)
+        {
+            Place();
+        }
+    }
+
+    void Place()
+    {
+        timer.SetActive(true);
+        timeToEnd -= Time.deltaTime;
+        timeText.text = timeToEnd.ToString("F0");
+        pControl.GetComponent<PlayerController>().enabled = false;
+        pControl.GetComponent<Jump>().enabled = false;
+        if(timeToEnd <= 0)
+        {
+            timeToEnd = 10;
+            buttonPressed = false;
+            pControl.GetComponent<PlayerController>().enabled = true;
+            pControl.GetComponent<Jump>().enabled = true;
+            timer.SetActive(false);
         }
     }
 
@@ -34,6 +61,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
         print("Juego cerrado");
     }
+
 }
 
 

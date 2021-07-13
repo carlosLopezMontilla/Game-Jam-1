@@ -9,9 +9,6 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Rigidbody _rb;
 
-    [Header("Jump")]
-    public bool isGrounded;
-    public float jumpForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,4 +23,12 @@ public class PlayerController : MonoBehaviour
         _rb.velocity = new Vector3(h * speed, _rb.velocity.y);
     }
 
+    /*private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.contactCount > 0)
+        {
+            ContactPoint contact = collision.GetContact(0);
+            _rb.AddForce(contact.normal * 10, ForceMode.Impulse);
+        }
+    }*/
 }
