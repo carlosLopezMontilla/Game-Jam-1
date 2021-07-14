@@ -36,7 +36,7 @@ public class BlockController : MonoBehaviour
 
     private void Move(float horMovement, float verMovement)
     {
-        float movSpeed = 10;
+        float movSpeed = 5;
         transform.position += new Vector3(horMovement * movSpeed * Time.deltaTime,
             verMovement * movSpeed * Time.deltaTime, 0);
     }

@@ -13,6 +13,7 @@ public class ObjectsToSpawn : MonoBehaviour
     public int objectId;
     public Transform spawnPoint;
     public Button[] buttons;
+    
 
     private void Start()
     {
