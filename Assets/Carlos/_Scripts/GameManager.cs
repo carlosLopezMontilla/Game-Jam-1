@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public PlayerController pControl;
     public Jump jump;
     public bool buttonPressed;
+    public bool powerUsed;
 
     [Header("Object to spawn")]
     public GameObject downMenu;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         timer.SetActive(false);
         buttonPressed = false;
         timeToEnd = totalTime;
-       
+        powerUsed = false;
     }
     private void Update()
     {
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
         {
             buttonPressed = true;
         }
-        if (buttonPressed)
+        if (buttonPressed && !powerUsed)
         {
             Place();
         }
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
         timeText.text = timeToEnd.ToString("F0");
         pControl.GetComponent<PlayerController>().enabled = false;
         pControl.GetComponent<Jump>().enabled = false;
-        if(timeToEnd <= 0)
+        if (timeToEnd <= 0)
         {
             timeToEnd = 10;
             buttonPressed = false;
@@ -58,8 +59,10 @@ public class GameManager : MonoBehaviour
             timer.SetActive(false);
             downMenu.SetActive(false);
             currentObject.GetComponent<BlockController>().enabled = false;
+            powerUsed = true;
 
         }
+
     }
 
     public void Play()
