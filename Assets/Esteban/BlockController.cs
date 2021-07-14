@@ -16,9 +16,9 @@ public class BlockController : MonoBehaviour
         float verMovement = 0;
 
         if (Input.GetKey(KeyCode.D))
-            horMovement = -1;
-        else if (Input.GetKey(KeyCode.A))
             horMovement = 1;
+        else if (Input.GetKey(KeyCode.A))
+            horMovement = -1;
 
         if (Input.GetKey(KeyCode.W))
             verMovement = 1;
@@ -27,6 +27,11 @@ public class BlockController : MonoBehaviour
 
         if (horMovement != 0 || verMovement != 0)
             Move(horMovement, verMovement);
+
+        if(Input.GetKey(KeyCode.Space))
+        {
+            this.GetComponent<BlockController>().enabled = false;
+        }
     }
 
     private void Move(float horMovement, float verMovement)
