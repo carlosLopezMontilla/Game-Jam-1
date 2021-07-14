@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("Object to spawn")]
     public GameObject downMenu;
     public ObjectsToSpawn objectsToSpawn;
+    public GameObject currentObject;
 
 
     private void Start()
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
             pControl.GetComponent<Jump>().enabled = true;
             timer.SetActive(false);
             downMenu.SetActive(false);
-            
+            currentObject.GetComponent<BlockController>().enabled = false;
 
         }
     }
