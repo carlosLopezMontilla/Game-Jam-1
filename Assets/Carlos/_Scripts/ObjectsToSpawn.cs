@@ -13,8 +13,9 @@ public class ObjectsToSpawn : MonoBehaviour
     public int objectId;
     public Transform spawnPoint;
     public Button[] buttons;
+    public Texture[] icons;
+    public Image[] buttonImage;
     
-
     private void Start()
     {
         gameManager = GetComponent<GameManager>();
@@ -23,7 +24,7 @@ public class ObjectsToSpawn : MonoBehaviour
     public void GenerateButton1()
     {
         GenerateButton(0);
-        objectId = 0;
+        objectId = 0;       
     }
     public void GenerateButton2()
     {

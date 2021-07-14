@@ -9,15 +9,15 @@ EditorBuildSettings:
     path: Assets/Carlos/Scenes/Menu.unity
     guid: 5cc984348b2b8d6468b7581ed8bc167c
   - enabled: 1
-    path: Assets/Scenes/Mundo1Scene.unity
+    path: Assets/Mundos/Mundo1Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Mundo2Scene.unity
+    path: Assets/Mundos/Mundo2Scene.unity
     guid: bbb792de39c8ce34d913b5e500fb3947
   - enabled: 1
-    path: Assets/Scenes/Mundo3Scene.unity
+    path: Assets/Mundos/Mundo3Scene.unity
     guid: 2cfff82003c2aad41b9fb62d308363fb
   - enabled: 1
-    path: Assets/Scenes/Mundo4Scene.unity
+    path: Assets/Mundos/Mundo4Scene.unity
     guid: d0e47b62874243f47807cfc3c52d381d
   m_configObjects: {}
