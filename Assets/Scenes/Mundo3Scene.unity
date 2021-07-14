@@ -1023,6 +1023,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 331ebf3f357fe0c4e9044b11e69e74bf, type: 3}
   m_PrefabInstance: {fileID: 311893432}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &318315196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318315199}
+  - component: {fileID: 318315198}
+  - component: {fileID: 318315197}
+  m_Layer: 0
+  m_Name: WinCondition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &318315197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318315196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df54ef95b4654840afa6a215b8ec557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
+--- !u!65 &318315198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318315196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &318315199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318315196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.71, y: 1.173, z: -8.12}
+  m_LocalScale: {x: 1, y: 2.6058, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &332634603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5444,7 +5502,7 @@ PrefabInstance:
       objectReference: {fileID: 1158573370}
     - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
       propertyPath: objetsToSpawn.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
       propertyPath: objetsToSpawn.Array.data[0]
@@ -5462,6 +5520,10 @@ PrefabInstance:
       propertyPath: objetsToSpawn.Array.data[3]
       value: 
       objectReference: {fileID: 419469511528196040, guid: 9d05190c1058d874f9ee46b3b37a7ec7, type: 3}
+    - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
+      propertyPath: objetsToSpawn.Array.data[4]
+      value: 
+      objectReference: {fileID: 8380171776493925182, guid: d283645e0a84bdf47a09206797413e91, type: 3}
     - target: {fileID: 4908981205667479711, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
       propertyPath: m_Name
       value: GameManager
