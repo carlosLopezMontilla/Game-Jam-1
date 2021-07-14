@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4908981205667479711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4908981205667479708}
+  - component: {fileID: 4908981205667479709}
+  - component: {fileID: 4908981205667479710}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4908981205667479708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908981205667479711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 248.20001, y: 83.6814, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4908981205667479709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908981205667479711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad06cc9f299d754eb1edce3cc703765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 10
+  timeToEnd: 0
+  timeText: {fileID: 0}
+  timer: {fileID: 0}
+  pControl: {fileID: 0}
+  jump: {fileID: 0}
+  buttonPressed: 0
+  powerUsed: 0
+  downMenu: {fileID: 0}
+  objectsToSpawn: {fileID: 4908981205667479710}
+  currentObject: {fileID: 0}
+--- !u!114 &4908981205667479710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908981205667479711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7414cd44038389f43a752e16f04368bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetsToSpawn:
+  - {fileID: 4036032481026450667, guid: b3fe892ef49d4c8448da2a342be5b8d1, type: 3}
+  - {fileID: 3155184176390318737, guid: 957124784275d834692c163e118e44ee, type: 3}
+  - {fileID: 2323184616741962307, guid: bc2d4141b5e90824c809ae627b31406c, type: 3}
+  currentId: 0
+  buttonId: 0
+  objectId: 0
+  spawnPoint: {fileID: 0}
+  buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

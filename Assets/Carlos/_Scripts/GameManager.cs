@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public ObjectsToSpawn objectsToSpawn;
     public GameObject currentObject;
 
+    public int currentscene;
 
     private void Start()
     {

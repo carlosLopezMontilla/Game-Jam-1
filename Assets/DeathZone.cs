@@ -13,7 +13,7 @@ public class DeathZone : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             //other.transform.position = pointToSpawn.position;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
