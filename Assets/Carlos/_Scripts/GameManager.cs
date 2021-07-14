@@ -58,7 +58,8 @@ public class GameManager : MonoBehaviour
             pControl.GetComponent<Jump>().enabled = true;
             timer.SetActive(false);
             downMenu.SetActive(false);
-            currentObject.GetComponent<BlockController>().enabled = false;
+            //currentObject.GetComponent<BlockController>().enabled = false;
+            //currentObject.GetComponent<BlockY>().enabled = false;
             powerUsed = true;
 
         }
