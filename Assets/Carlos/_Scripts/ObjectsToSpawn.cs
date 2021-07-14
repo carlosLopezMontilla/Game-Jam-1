@@ -10,31 +10,24 @@ public class ObjectsToSpawn : MonoBehaviour
     public int buttonId;
     public Transform spawnPoint;
     public Button[] buttons;
-    
     public void GenerateButton1()
     {
-        buttonId = 0;
-        currentId = Random.Range(0, objetsToSpawn.Length);
-        GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
-        buttons[buttonId].interactable = false;
+        GenerateButton(0);
     }
     public void GenerateButton2()
     {
-        buttonId = 1;
-        currentId = Random.Range(0, objetsToSpawn.Length);
-        GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
-        buttons[buttonId].interactable = false;
+        GenerateButton(1);
     }
     public void GenerateButton3()
     {
-        buttonId = 2;
-        currentId = Random.Range(0, objetsToSpawn.Length);
-        GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
-        buttons[buttonId].interactable = false;
+        GenerateButton(2);
     }
      public void GenerateButton4()
     {
-        buttonId = 3;
+        GenerateButton(3); 
+    }
+    void GenerateButton(int buttonId)
+    {
         currentId = Random.Range(0, objetsToSpawn.Length);
         GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
         buttons[buttonId].interactable = false;

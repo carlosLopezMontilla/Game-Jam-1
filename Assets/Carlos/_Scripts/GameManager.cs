@@ -56,10 +56,8 @@ public class GameManager : MonoBehaviour
             pControl.GetComponent<Jump>().enabled = true;
             timer.SetActive(false);
             downMenu.SetActive(false);
-            objectsToSpawn.buttons[0].interactable = true;
-            objectsToSpawn.buttons[1].interactable = true;
-            objectsToSpawn.buttons[2].interactable = true;
-            objectsToSpawn.buttons[3].interactable = true;
+            
+
         }
     }
 
