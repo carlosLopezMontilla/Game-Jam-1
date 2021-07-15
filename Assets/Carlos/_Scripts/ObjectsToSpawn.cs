@@ -46,6 +46,12 @@ public class ObjectsToSpawn : MonoBehaviour
         currentId = Random.Range(0, objetsToSpawn.Length);
         GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
         buttons[buttonId].interactable = false;
+
+        if (gameManager.currentObject != null)
+        {
+            gameManager.currentObject.GetComponent<BlockController>().enabled = false;
+        }
+
         gameManager.currentObject = objectSpawned;
     }
 }
