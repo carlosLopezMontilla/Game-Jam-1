@@ -1,30 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &3831152062249728191
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173593655713886297}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.96737516, y: 0.44835523, z: 0.80227077}
-  m_Center: {x: -5.3755472e-15, y: 0.023067594, z: 1.5682367}
---- !u!114 &3831152062249728188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173593655713886297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f8c76be6ae46c4a84726772d45cac9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3831152062510933151
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3831152062510933150}
-  - component: {fileID: 3831152062510933145}
+  - component: {fileID: 3590722371636140102}
   m_Layer: 6
   m_Name: LWithSpikes
   m_TagString: Untagged
@@ -61,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3831152062510933145
+--- !u!114 &3590722371636140102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +45,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3831152062510933151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c98ac552b891d942a33e65286699d8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c231151c71b3f34485ff30720fed402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &3831152062767088597
@@ -98,26 +73,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f8c76be6ae46c4a84726772d45cac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &3831152063173473192
+--- !u!65 &3831152062249728191
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173593656579431854}
+  m_GameObject: {fileID: 4173593655713886297}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.96737516, y: 0.41654336, z: 0.7321291}
-  m_Center: {x: -5.8382474e-15, y: 0.032847904, z: 1.6033151}
---- !u!114 &3831152063173473193
+  m_Size: {x: 0.96737516, y: 0.44835523, z: 0.80227077}
+  m_Center: {x: -5.3755472e-15, y: 0.023067594, z: 1.5682367}
+--- !u!114 &3831152062249728188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4173593656579431854}
+  m_GameObject: {fileID: 4173593655713886297}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0f8c76be6ae46c4a84726772d45cac9, type: 3}
@@ -143,6 +118,31 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4173593656138852203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f8c76be6ae46c4a84726772d45cac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3831152063173473192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173593656579431854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.96737516, y: 0.41654336, z: 0.7321291}
+  m_Center: {x: -5.8382474e-15, y: 0.032847904, z: 1.6033151}
+--- !u!114 &3831152063173473193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173593656579431854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0f8c76be6ae46c4a84726772d45cac9, type: 3}
