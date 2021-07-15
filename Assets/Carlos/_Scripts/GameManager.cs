@@ -73,7 +73,8 @@ public class GameManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        print("Juego cerrado");
+        SceneManager.LoadScene(0);
+
     }
 
 }
