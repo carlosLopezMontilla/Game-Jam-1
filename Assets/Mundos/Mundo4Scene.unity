@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18043417, g: 0.22589536, b: 0.30700928, a: 1}
+  m_IndirectSpecularColor: {r: 0.18043417, g: 0.22589536, b: 0.30700922, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3945,6 +3945,22 @@ PrefabInstance:
       propertyPath: buttons.Array.data[3]
       value: 
       objectReference: {fileID: 1807058282}
+    - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
+      propertyPath: objectIcons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
+      propertyPath: objectIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b8e89fd4b0ba85d4cb9bc78a1b88fef4, type: 3}
+    - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
+      propertyPath: objectIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 880d7f71b462fd5498c47cf3ea8e4630, type: 3}
+    - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
+      propertyPath: objectIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4bb7019f140745c41ac5163d168e3e8d, type: 3}
     - target: {fileID: 4908981205667479710, guid: da34365ee4c4f6e4b9d1efe88e48b7fa, type: 3}
       propertyPath: objetsToSpawn.Array.data[0]
       value: 

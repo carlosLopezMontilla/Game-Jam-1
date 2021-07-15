@@ -8,6 +8,7 @@ public class ObjectsToSpawn : MonoBehaviour
     private GameManager gameManager;
 
     public GameObject[] objetsToSpawn;
+    public Sprite[] objectIcons;
     public int currentId;
     public int buttonId;
     public int objectId;
@@ -15,10 +16,22 @@ public class ObjectsToSpawn : MonoBehaviour
     public Button[] buttons;
     public Texture[] icons;
     public Image[] buttonImage;
-    
+
+    List<GameObject> spawnList;
+
     private void Start()
     {
         gameManager = GetComponent<GameManager>();
+
+        spawnList = new List<GameObject>();
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            int numObj = Random.Range(0, objetsToSpawn.Length);
+            GameObject obj = objetsToSpawn[numObj];
+            spawnList.Add(obj);
+
+            buttons[i].GetComponent<Image>().sprite = objectIcons[numObj];
+        }
     }
 
     public void GenerateButton1()
@@ -43,8 +56,9 @@ public class ObjectsToSpawn : MonoBehaviour
     }
     void GenerateButton(int buttonId)
     {
-        currentId = Random.Range(0, objetsToSpawn.Length);
-        GameObject objectSpawned = Instantiate(objetsToSpawn[currentId], spawnPoint.position, Quaternion.identity);
+        //currentId = Random.Range(0, objetsToSpawn.Length);
+        GameObject newObj = spawnList[buttonId];
+        GameObject objectSpawned = Instantiate(newObj, spawnPoint.position, Quaternion.identity);
         buttons[buttonId].interactable = false;
 
         if (gameManager.currentObject != null)
